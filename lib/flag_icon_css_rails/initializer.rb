@@ -1,4 +1,1 @@
-
-Dir.glob("#{Rails.root}/vendor/assets/images/**/").each do |path|
-  Rails.application.config.assets.paths << path
-end
+Rails.application.config.assets.precompile += %w( 4x3/*.svg 1x1/*.svg )
